@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author: Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
+  description: Ansible Role for MySQL Database Management.
+  company: PantaRei Design
+  license: MIT
+  min_ansible_version: 1.9
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  categories:
+  - system
+dependencies:
+  - mysql
+  - mysql_user

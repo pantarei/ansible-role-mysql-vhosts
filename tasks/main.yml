@@ -1,0 +1,9 @@
+---
+# tasks file for mysql_db
+
+- name: create mysql db
+  mysql_db:
+    name="{{ mysql_db_name }}"
+    encoding="{{ mysql_db_encoding }}"
+    collation="{{ mysql_db_collation }}"
+  tags: mysql_db

@@ -1,0 +1,14 @@
+---
+# roles file for mysql_db
+
+- src: https://github.com/pantarei/ansible-role-apt
+  name: apt
+
+- src: https://github.com/pantarei/ansible-role-mysql
+  name: mysql
+
+- src: https://github.com/pantarei/ansible-role-mysql-user
+  name: mysql_user
+
+- src: https://github.com/pantarei/ansible-role-mysql-db
+  name: mysql_db
