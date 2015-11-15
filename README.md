@@ -70,7 +70,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-        - { role: hswong3i.mysq_user, mysql_user_name: 'example', mysql_user_password: 'Ahd1Vae8' }
+        - { role: hswong3i.mysql_user, mysql_user_name: 'example', mysql_user_password: 'Ahd1Vae8' }
         - { role: hswong3i.mysql_db, mysql_db_collation: 'utf8_general_ci', mysql_db_encoding: 'utf8', mysql_db_name: 'example' }
 
 License
