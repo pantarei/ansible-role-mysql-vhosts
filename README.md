@@ -1,12 +1,10 @@
-MySQL Database
-==============
+Ansible Role for MySQL Database
+===============================
 
-[![Build
-Status](https://travis-ci.org/pantarei/ansible-role-mysql-db.svg?branch=master)](https://travis-ci.org/pantarei/ansible-role-mysql-db)
-[![GitHub
-tag](https://img.shields.io/github/tag/pantarei/ansible-role-mysql-db.svg)](https://github.com/pantarei/ansible-role-mysql-db)
-[![GitHub
-license](https://img.shields.io/github/license/pantarei/ansible-role-mysql-db.svg)](https://github.com/pantarei/ansible-role-mysql-db)
+[![Build Status](https://travis-ci.org/pantarei/ansible-role-mysql-db.svg?branch=master)](https://travis-ci.org/pantarei/ansible-role-mysql-db)
+[![GitHub tag](https://img.shields.io/github/tag/pantarei/ansible-role-mysql-db.svg)](https://github.com/pantarei/ansible-role-mysql-db)
+[![GitHub license](https://img.shields.io/github/license/pantarei/ansible-role-mysql-db.svg)](https://github.com/pantarei/ansible-role-mysql-db/blob/master/LICENSE)
+[![Ansible Role](https://img.shields.io/ansible/role/5978.svg)](https://galaxy.ansible.com/detail#/role/5978)
 
 Ansible Role for MySQL Database Management.
 
@@ -20,36 +18,66 @@ This role was designed for Ubuntu Server 14.04 LTS.
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here,
-including any variables that are in defaults/main.yml, vars/main.yml,
-and any variables that can/should be set via parameters to the role. Any
-variables that are read from other roles and/or the global scope (ie.
-hostvars, group vars, etc.) should be mentioned here as well.
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">parameter</th>
+<th align="left">required</th>
+<th align="left">default</th>
+<th align="left">choices</th>
+<th align="left">comments</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">mysql_db_collation</td>
+<td align="left">yes</td>
+<td align="left">utf8_general_ci</td>
+<td align="left"></td>
+<td align="left">Pass value as <code>collation</code> to <a href="http://docs.ansible.com/ansible/mysql_db_module.html">mysql_db module</a>.</td>
+</tr>
+<tr class="even">
+<td align="left">mysql_db_encoding</td>
+<td align="left">yes</td>
+<td align="left">utf8</td>
+<td align="left"></td>
+<td align="left">Pass value as <code>encoding</code> to <a href="http://docs.ansible.com/ansible/mysql_db_module.html">mysql_db module</a>.</td>
+</tr>
+<tr class="odd">
+<td align="left">mysql_db_name</td>
+<td align="left">yes</td>
+<td align="left">example</td>
+<td align="left"></td>
+<td align="left">Pass value as <code>name</code> to <a href="http://docs.ansible.com/ansible/mysql_db_module.html">mysql_db module</a>.</td>
+</tr>
+</tbody>
+</table>
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details
-in regards to parameters that may need to be set for other roles, or
-variables that are used from other roles.
+-   [hswong3i.mysql\_user](https://galaxy.ansible.com/detail#/role/5977)
 
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with
-variables passed in as parameters) is always nice for users too:
-
     - hosts: servers
       roles:
-         - { role: username.rolename, x: 42 }
+        - { role: hswong3i.mysq_user, mysql_user_name: 'example', mysql_user_password: 'Ahd1Vae8' }
+        - { role: hswong3i.mysql_db, mysql_db_collation: 'utf8_general_ci', mysql_db_encoding: 'utf8', mysql_db_name: 'example' }
 
 License
 -------
 
--   Code released under
-    [MIT](https://github.com/hswong3i/ansible-role-mysql-db/blob/master/LICENSE)
--   Docs released under [CC BY
-    4.0](http://creativecommons.org/licenses/by/4.0/)
+-   Code released under [MIT](https://github.com/hswong3i/ansible-role-mysql-db/blob/master/LICENSE)
+-   Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 Author Information
 ------------------
