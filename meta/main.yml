@@ -12,5 +12,4 @@ galaxy_info:
   categories:
   - system
 dependencies:
-  - mysql
-  - mysql_user
+  - hswong3i.mysql_user
