@@ -1,5 +1,5 @@
 ---
-# defaults file for mysql_db
+# defaults file for hswong3i.mysql_db
 
 mysql_db_collation: utf8_general_ci
 mysql_db_encoding: utf8
