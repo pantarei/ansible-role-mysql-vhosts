@@ -6,4 +6,4 @@
     name="{{ mysql_db_name }}"
     encoding="{{ mysql_db_encoding }}"
     collation="{{ mysql_db_collation }}"
-  tags: mysql_db
+  tags: hswong3i.mysql_db
