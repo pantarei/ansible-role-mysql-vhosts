@@ -2,9 +2,9 @@ Ansible Role for MySQL Database
 ===============================
 
 [![Build Status](https://travis-ci.org/pantarei/ansible-role-mysql-db.svg?branch=master)](https://travis-ci.org/pantarei/ansible-role-mysql-db)
-[![GitHub tag](https://img.shields.io/github/tag/pantarei/ansible-role-mysql-db.svg)](https://github.com/pantarei/ansible-role-mysql-db)
-[![GitHub license](https://img.shields.io/github/license/pantarei/ansible-role-mysql-db.svg)](https://github.com/pantarei/ansible-role-mysql-db/blob/master/LICENSE)
-[![Ansible Role](https://img.shields.io/ansible/role/5978.svg)](https://galaxy.ansible.com/detail#/role/5978)
+ [![GitHub tag](https://img.shields.io/github/tag/pantarei/ansible-role-mysql-db.svg)](https://github.com/pantarei/ansible-role-mysql-db)
+ [![GitHub license](https://img.shields.io/github/license/pantarei/ansible-role-mysql-db.svg)](https://github.com/pantarei/ansible-role-mysql-db/blob/master/LICENSE)
+ [![Ansible Role](https://img.shields.io/ansible/role/5978.svg)](https://galaxy.ansible.com/detail#/role/5978)
 
 Ansible Role for MySQL Database Management.
 
@@ -70,7 +70,6 @@ Example Playbook
 
     - hosts: servers
       roles:
-        - { role: hswong3i.mysql_user, mysql_user_name: 'example', mysql_user_password: 'Ahd1Vae8' }
         - { role: hswong3i.mysql_db, mysql_db_collation: 'utf8_general_ci', mysql_db_encoding: 'utf8', mysql_db_name: 'example' }
 
 License
