@@ -63,7 +63,7 @@ Role Variables
 Dependencies
 ------------
 
--   [hswong3i.mysql\_user](https://galaxy.ansible.com/detail#/role/5977)
+-   [hswong3i.mysql\_user](https://github.com/pantarei/ansible-role-mysql-user)
 
 Example Playbook
 ----------------
@@ -75,7 +75,7 @@ Example Playbook
 License
 -------
 
--   Code released under [MIT](https://github.com/hswong3i/ansible-role-mysql-db/blob/master/LICENSE)
+-   Code released under [MIT](https://github.com/pantarei/ansible-role-mysql-db/blob/master/LICENSE)
 -   Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 Author Information
