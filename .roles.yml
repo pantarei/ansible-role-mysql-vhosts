@@ -1,4 +1,5 @@
 ---
 # roles file for hswong3i.mysql_db
 
+- src: hswong3i.mysql
 - src: hswong3i.mysql_db
