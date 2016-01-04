@@ -63,7 +63,7 @@ Role Variables
 Dependencies
 ------------
 
--   [hswong3i.mysql\_user](https://github.com/pantarei/ansible-role-mysql-user)
+No additional role dependencies.
 
 Example Playbook
 ----------------
