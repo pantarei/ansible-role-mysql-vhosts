@@ -2,9 +2,9 @@ Ansible Role for MySQL Database
 ===============================
 
 [![Build Status](https://travis-ci.org/pantarei/ansible-role-mysql-db.svg?branch=master)](https://travis-ci.org/pantarei/ansible-role-mysql-db)
- [![GitHub tag](https://img.shields.io/github/tag/pantarei/ansible-role-mysql-db.svg)](https://github.com/pantarei/ansible-role-mysql-db)
- [![GitHub license](https://img.shields.io/github/license/pantarei/ansible-role-mysql-db.svg)](https://github.com/pantarei/ansible-role-mysql-db/blob/master/LICENSE)
- [![Ansible Role](https://img.shields.io/ansible/role/5978.svg)](https://galaxy.ansible.com/detail#/role/5978)
+[![GitHub tag](https://img.shields.io/github/tag/pantarei/ansible-role-mysql-db.svg)](https://github.com/pantarei/ansible-role-mysql-db)
+[![GitHub license](https://img.shields.io/github/license/pantarei/ansible-role-mysql-db.svg)](https://github.com/pantarei/ansible-role-mysql-db/blob/master/LICENSE)
+[![Ansible Role](https://img.shields.io/ansible/role/5978.svg)](https://galaxy.ansible.com/detail#/role/5978)
 
 Ansible Role for MySQL Database Management.
 
