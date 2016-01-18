@@ -1,9 +1,21 @@
 ---
-# tasks file for hswong3i.mysql_db
+# tasks file for hswong3i.mysql_vhosts
 
 - name: create mysql db
   mysql_db:
-    name="{{ mysql_db_name }}"
-    encoding="{{ mysql_db_encoding }}"
-    collation="{{ mysql_db_collation }}"
-  tags: hswong3i.mysql_db
+    name="{{ mysql_vhosts_id }}"
+    encoding="{{ mysql_vhosts_encoding }}"
+    collation="{{ mysql_vhosts_collation }}"
+  tags: hswong3i.mysql_vhosts
+
+- name: create mysql user
+  mysql_user:
+    name="{{ mysql_vhosts_user }}"
+    password="{{ mysql_vhosts_pass }}"
+    host="{{ item[0] }}"
+    priv="{{ item[1] }}"
+    append_privs=yes
+  with_nested:
+    - "{{ mysql_vhosts_host }}"
+    - "{{ mysql_vhosts_priv }}"
+  tags: hswong3i.mysql_vhosts

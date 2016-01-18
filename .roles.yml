@@ -1,5 +1,5 @@
 ---
-# roles file for hswong3i.mysql_db
+# roles file for hswong3i.mysql_vhosts
 
 - src: hswong3i.mysql
-- src: hswong3i.mysql_db
+- src: hswong3i.mysql_vhosts
