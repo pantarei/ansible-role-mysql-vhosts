@@ -1,8 +1,8 @@
 ---
-# test file for hswong3i.mysql_db
+# test file for hswong3i.mysql_vhosts
 
 - hosts: localhost
   remote_user: root
   roles:
     - hswong3i.mysql
-    - ansible-role-mysql-db
+    - ansible-role-mysql-vhosts

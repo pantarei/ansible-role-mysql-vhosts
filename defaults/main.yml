@@ -1,6 +1,15 @@
 ---
-# defaults file for hswong3i.mysql_db
+# defaults file for hswong3i.mysql_vhosts
 
-mysql_db_collation: utf8_general_ci
-mysql_db_encoding: utf8
-mysql_db_name: example
+mysql_vhosts_id: example
+mysql_vhosts_name: example
+mysql_vhosts_password: xaivoo9Z
+mysql_vhosts_collation: utf8_general_ci
+mysql_vhosts_encoding: utf8
+mysql_vhosts_host: [
+  'localhost',
+  '0.0.0.0',
+]
+mysql_vhosts_priv: [
+  "{{ mysql_vhosts_id }}.*:ALL,GRANT",
+]
