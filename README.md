@@ -44,14 +44,14 @@ Role Variables
 <td align="left">Unique ID for virtual host shared among other services.</td>
 </tr>
 <tr class="even">
-<td align="left">mysql_vhosts_name</td>
+<td align="left">mysql_vhosts_user</td>
 <td align="left">yes</td>
 <td align="left">example</td>
 <td align="left"></td>
 <td align="left">Pass value as <code>name</code> to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
 </tr>
-<tr class="even">
-<td align="left">mysql_vhosts_password</td>
+<tr class="odd">
+<td align="left">mysql_vhosts_pass</td>
 <td align="left">yes</td>
 <td align="left">xaivoo9Z</td>
 <td align="left"></td>
@@ -104,7 +104,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-        - { role: hswong3i.mysql_vhosts, mysql_vhosts_collation: 'utf8_general_ci', mysql_vhosts_encoding: 'utf8', mysql_vhosts_name: 'example' }
+        - { role: hswong3i.mysql_vhosts, mysql_vhosts_id: 'example', mysql_vhosts_user: 'example' }
 
 License
 -------

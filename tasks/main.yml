@@ -10,8 +10,8 @@
 
 - name: create mysql user
   mysql_user:
-    name="{{ mysql_vhosts_name }}"
-    password="{{ mysql_vhosts_password }}"
+    name="{{ mysql_vhosts_user }}"
+    password="{{ mysql_vhosts_pass }}"
     host="{{ item[0] }}"
     priv="{{ item[1] }}"
     append_privs=yes
