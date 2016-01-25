@@ -15,5 +15,5 @@
     host={{ item.host }}
     priv={{ item.priv }}
     append_privs=yes
-  with_item: mysql_vhosts_privs
+  with_items: mysql_vhosts_privs
   tags: hswong3i.mysql_vhosts
