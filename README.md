@@ -72,24 +72,14 @@ Role Variables
 <td align="left">Pass value as <code>encoding</code> to <a href="http://docs.ansible.com/ansible/mysql_db_module.html">mysql_db module</a>.</td>
 </tr>
 <tr class="even">
-<td align="left">mysql_vhosts_host</td>
+<td align="left">mysql_vhosts_privs</td>
 <td align="left">yes</td>
 <td align="left"><a href="https://github.com/pantarei/ansible-role-mysql-user/blob/master/defaults/main.yml">defaults/main.yml</a></td>
 <td align="left"><ul>
 <li><code>[]</code></li>
 <li><code>list</code></li>
 </ul></td>
-<td align="left">Pass list as <code>host</code> to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
-</tr>
-<tr class="odd">
-<td align="left">mysql_vhosts_priv</td>
-<td align="left">yes</td>
-<td align="left"><a href="https://github.com/pantarei/ansible-role-mysql-user/blob/master/defaults/main.yml">defaults/main.yml</a></td>
-<td align="left"><ul>
-<li><code>[]</code></li>
-<li><code>list</code></li>
-</ul></td>
-<td align="left">Pass list as <code>priv</code> to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
+<td align="left">Pass list to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
 </tr>
 </tbody>
 </table>
