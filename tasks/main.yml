@@ -3,17 +3,17 @@
 
 - name: create mysql db
   mysql_db:
-    name="{{ mysql_vhosts_id }}"
-    encoding="{{ mysql_vhosts_encoding }}"
-    collation="{{ mysql_vhosts_collation }}"
+    name: "{{ mysql_vhosts_id }}"
+    encoding: "{{ mysql_vhosts_encoding }}"
+    collation: "{{ mysql_vhosts_collation }}"
   tags: hswong3i.mysql_vhosts
 
 - name: create mysql user
   mysql_user:
-    name="{{ mysql_vhosts_user }}"
-    password="{{ mysql_vhosts_pass }}"
-    host="{{ item.host }}"
-    priv="{{ item.priv }}"
-    append_privs=yes
+    name: "{{ mysql_vhosts_user }}"
+    password: "{{ mysql_vhosts_pass }}"
+    host: "{{ item.host }}"
+    priv: "{{ item.priv }}"
+    append_privs: "yes"
   with_items: "{{ mysql_vhosts_privs }}"
   tags: hswong3i.mysql_vhosts
