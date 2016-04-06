@@ -28,58 +28,58 @@ Role Variables
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">parameter</th>
-<th align="left">required</th>
-<th align="left">default</th>
-<th align="left">choices</th>
-<th align="left">comments</th>
+<th>parameter</th>
+<th>required</th>
+<th>default</th>
+<th>choices</th>
+<th>comments</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">mysql_vhosts_id</td>
-<td align="left">yes</td>
-<td align="left">example</td>
-<td align="left"></td>
-<td align="left">Unique ID for virtual host shared among other services.</td>
+<td>mysql_vhosts_id</td>
+<td>yes</td>
+<td>example</td>
+<td></td>
+<td>Unique ID for virtual host shared among other services.</td>
 </tr>
 <tr class="even">
-<td align="left">mysql_vhosts_user</td>
-<td align="left">yes</td>
-<td align="left">example</td>
-<td align="left"></td>
-<td align="left">Pass value as <code>name</code> to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
+<td>mysql_vhosts_user</td>
+<td>yes</td>
+<td>example</td>
+<td></td>
+<td>Pass value as <code>name</code> to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
 </tr>
 <tr class="odd">
-<td align="left">mysql_vhosts_pass</td>
-<td align="left">yes</td>
-<td align="left">xaivoo9Z</td>
-<td align="left"></td>
-<td align="left">Pass value as <code>password</code> to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
+<td>mysql_vhosts_pass</td>
+<td>yes</td>
+<td>xaivoo9Z</td>
+<td></td>
+<td>Pass value as <code>password</code> to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
 </tr>
 <tr class="even">
-<td align="left">mysql_vhosts_collation</td>
-<td align="left">yes</td>
-<td align="left">utf8_general_ci</td>
-<td align="left"></td>
-<td align="left">Pass value as <code>collation</code> to <a href="http://docs.ansible.com/ansible/mysql_db_module.html">mysql_db module</a>.</td>
+<td>mysql_vhosts_collation</td>
+<td>yes</td>
+<td>utf8_general_ci</td>
+<td></td>
+<td>Pass value as <code>collation</code> to <a href="http://docs.ansible.com/ansible/mysql_db_module.html">mysql_db module</a>.</td>
 </tr>
 <tr class="odd">
-<td align="left">mysql_vhosts_encoding</td>
-<td align="left">yes</td>
-<td align="left">utf8</td>
-<td align="left"></td>
-<td align="left">Pass value as <code>encoding</code> to <a href="http://docs.ansible.com/ansible/mysql_db_module.html">mysql_db module</a>.</td>
+<td>mysql_vhosts_encoding</td>
+<td>yes</td>
+<td>utf8</td>
+<td></td>
+<td>Pass value as <code>encoding</code> to <a href="http://docs.ansible.com/ansible/mysql_db_module.html">mysql_db module</a>.</td>
 </tr>
 <tr class="even">
-<td align="left">mysql_vhosts_privs</td>
-<td align="left">yes</td>
-<td align="left"><a href="https://github.com/pantarei/ansible-role-mysql-user/blob/master/defaults/main.yml">defaults/main.yml</a></td>
-<td align="left"><ul>
+<td>mysql_vhosts_privs</td>
+<td>yes</td>
+<td><a href="https://github.com/pantarei/ansible-role-mysql-user/blob/master/defaults/main.yml">defaults/main.yml</a></td>
+<td><ul>
 <li><code>[]</code></li>
 <li><code>list</code></li>
 </ul></td>
-<td align="left">Pass list to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
+<td>Pass list to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -106,6 +106,6 @@ Author Information
 ------------------
 
 -   Wong Hoi Sing Edison
-    -   <https://twitter.com/hswong3i>
-    -   <https://github.com/hswong3i>
+    -   <a href="https://twitter.com/hswong3i" class="uri" class="uri">https://twitter.com/hswong3i</a>
+    -   <a href="https://github.com/hswong3i" class="uri" class="uri">https://github.com/hswong3i</a>
 
