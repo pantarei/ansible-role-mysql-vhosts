@@ -5,7 +5,4 @@
   remote_user: root
   roles:
     - hswong3i.mysql
-    - role: ansible-role-mysql-vhosts
-      mysql_vhosts_id: "example"
-      mysql_vhosts_pass: "xaivoo9Z"
-      mysql_vhosts_user: "example"
+    - ansible-role-mysql-vhosts
