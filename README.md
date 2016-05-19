@@ -36,6 +36,20 @@ Role Variables
 </thead>
 <tbody>
 <tr class="odd">
+<td>mysql_vhosts_collation</td>
+<td>yes</td>
+<td>utf8_general_ci</td>
+<td></td>
+<td>Pass value as <code>collation</code> to <a href="http://docs.ansible.com/ansible/mysql_db_module.html">mysql_db module</a>.</td>
+</tr>
+<tr class="even">
+<td>mysql_vhosts_encoding</td>
+<td>yes</td>
+<td>utf8</td>
+<td></td>
+<td>Pass value as <code>encoding</code> to <a href="http://docs.ansible.com/ansible/mysql_db_module.html">mysql_db module</a>.</td>
+</tr>
+<tr class="odd">
 <td>mysql_vhosts_id</td>
 <td>yes</td>
 <td>example</td>
@@ -43,34 +57,13 @@ Role Variables
 <td>Unique ID for virtual host shared among other services.</td>
 </tr>
 <tr class="even">
-<td>mysql_vhosts_user</td>
-<td>yes</td>
-<td>example</td>
-<td></td>
-<td>Pass value as <code>name</code> to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
-</tr>
-<tr class="odd">
 <td>mysql_vhosts_pass</td>
 <td>yes</td>
 <td>xaivoo9Z</td>
 <td></td>
 <td>Pass value as <code>password</code> to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
 </tr>
-<tr class="even">
-<td>mysql_vhosts_collation</td>
-<td>yes</td>
-<td>utf8_general_ci</td>
-<td></td>
-<td>Pass value as <code>collation</code> to <a href="http://docs.ansible.com/ansible/mysql_db_module.html">mysql_db module</a>.</td>
-</tr>
 <tr class="odd">
-<td>mysql_vhosts_encoding</td>
-<td>yes</td>
-<td>utf8</td>
-<td></td>
-<td>Pass value as <code>encoding</code> to <a href="http://docs.ansible.com/ansible/mysql_db_module.html">mysql_db module</a>.</td>
-</tr>
-<tr class="even">
 <td>mysql_vhosts_privs</td>
 <td>yes</td>
 <td><a href="https://github.com/pantarei/ansible-role-mysql-user/blob/master/defaults/main.yml">defaults/main.yml</a></td>
@@ -79,6 +72,13 @@ Role Variables
 <li><code>list</code></li>
 </ul></td>
 <td>Pass list to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
+</tr>
+<tr class="even">
+<td>mysql_vhosts_user</td>
+<td>yes</td>
+<td>example</td>
+<td></td>
+<td>Pass value as <code>name</code> to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -91,9 +91,12 @@ No additional role dependencies.
 Example Playbook
 ----------------
 
-    - hosts: servers
+    - hosts: all
       roles:
-        - { role: hswong3i.mysql_vhosts, mysql_vhosts_id: 'example', mysql_vhosts_user: 'example' }
+        - role: hswong3i.mysql_vhosts
+          mysql_vhosts_id: "example"
+          mysql_vhosts_pass: "xaivoo9Z"
+          mysql_vhosts_user: "example"
 
 License
 -------
