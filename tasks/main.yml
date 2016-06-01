@@ -1,6 +1,13 @@
 ---
 # tasks file for hswong3i.mysql_vhosts
 
+- name: create mysql user
+  mysql_user:
+    name: "{{ mysql_vhosts_user }}"
+    password: "{{ mysql_vhosts_pass }}"
+  when: mysql_vhosts_pass is string
+  tags: hswong3i.mysql_vhosts
+
 - name: create mysql db
   mysql_db:
     name: "{{ mysql_vhosts_id }}"
@@ -8,10 +15,9 @@
     collation: "{{ mysql_vhosts_collation }}"
   tags: hswong3i.mysql_vhosts
 
-- name: create mysql user
+- name: append privs for mysql user
   mysql_user:
     name: "{{ mysql_vhosts_user }}"
-    password: "{{ mysql_vhosts_pass }}"
     host: "{{ item.host }}"
     priv: "{{ item.priv }}"
     append_privs: "yes"
