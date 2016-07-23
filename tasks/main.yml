@@ -2,6 +2,8 @@
 # tasks file for hswong3i.mysql_vhosts
 
 - name: create mysql user
+  become: true
+  become_user: "root"
   mysql_user:
     name: "{{ mysql_vhosts_user }}"
     password: "{{ mysql_vhosts_pass }}"
@@ -9,6 +11,8 @@
   tags: hswong3i.mysql_vhosts
 
 - name: create mysql db
+  become: true
+  become_user: "root"
   mysql_db:
     name: "{{ mysql_vhosts_id }}"
     encoding: "{{ mysql_vhosts_encoding }}"
@@ -16,6 +20,8 @@
   tags: hswong3i.mysql_vhosts
 
 - name: append privs for mysql user
+  become: true
+  become_user: "root"
   mysql_user:
     name: "{{ mysql_vhosts_user }}"
     host: "{{ item.host }}"
