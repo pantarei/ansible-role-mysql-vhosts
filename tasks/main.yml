@@ -20,6 +20,7 @@
 - name: append privs for mysql user
   mysql_user:
     name: "{{ mysql_vhosts_user }}"
+    password: "{{ mysql_vhosts_pass }}"
     host: "{{ item.host }}"
     priv: "{{ item.priv }}"
     append_privs: "yes"
