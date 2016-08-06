@@ -38,28 +38,28 @@ Role Variables
 <tr class="odd">
 <td>mysql_vhosts_collation</td>
 <td>yes</td>
-<td>utf8_general_ci</td>
+<td>utf8mb4_general_ci</td>
 <td></td>
 <td>Pass value as <code>collation</code> to <a href="http://docs.ansible.com/ansible/mysql_db_module.html">mysql_db module</a>.</td>
 </tr>
 <tr class="even">
 <td>mysql_vhosts_encoding</td>
 <td>yes</td>
-<td>utf8</td>
+<td>utf8mb4</td>
 <td></td>
 <td>Pass value as <code>encoding</code> to <a href="http://docs.ansible.com/ansible/mysql_db_module.html">mysql_db module</a>.</td>
 </tr>
 <tr class="odd">
 <td>mysql_vhosts_id</td>
 <td>yes</td>
-<td>example</td>
+<td></td>
 <td></td>
 <td>Unique ID for virtual host shared among other services.</td>
 </tr>
 <tr class="even">
 <td>mysql_vhosts_pass</td>
 <td>yes</td>
-<td>xaivoo9Z</td>
+<td></td>
 <td></td>
 <td>Pass value as <code>password</code> to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
 </tr>
@@ -76,7 +76,7 @@ Role Variables
 <tr class="even">
 <td>mysql_vhosts_user</td>
 <td>yes</td>
-<td>example</td>
+<td></td>
 <td></td>
 <td>Pass value as <code>name</code> to <a href="http://docs.ansible.com/ansible/mysql_user_module.html">mysql_user module</a>.</td>
 </tr>
