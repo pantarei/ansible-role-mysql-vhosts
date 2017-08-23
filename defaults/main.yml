@@ -1,6 +1,9 @@
 ---
 # defaults file for hswong3i.mysql_vhosts
 
+# only provide root password if fail with /root/.my.cnf.
+mysql_root_pass: ~
+
 # required variables
 mysql_vhosts_id: ~
 mysql_vhosts_user: ~
